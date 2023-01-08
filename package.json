@@ -5,9 +5,10 @@
   },
   "name": "web",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "./src/app.js",
   "scripts": {
-    "start": "node app.js",
+    "server": "NODE_ENV=development ./node_modules/.bin/.netlify-lamba serve src",
+    "build": "NODE_ENV=production ./node_modules/.bin/.netlify-lamba serve src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

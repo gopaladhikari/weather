@@ -30,6 +30,6 @@ app.get("*", (req, res) => {
   res.render("404errorPage");
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Your server is listening on port 3000!");
 });
